@@ -114,12 +114,3 @@ media-queres
         flex-direction: column;
     }
 }
-@media only screen and (min-width:688px), (max-width: 992px) {
-    .container{
-        width: 100%;
-    }
-    .players .courses
-    {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
