@@ -1,0 +1,125 @@
+/* top player style */
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common-style */
+body{
+    font-family: 'Poppins',sans-serif;
+    background-color: #F3F1FF;
+}
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    background-color: #f3dede;
+    width: 870px;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+.player-title{
+    margin-top: 3px;
+}
+.player-name{
+    padding-left:20px;
+}
+.player-title {
+    color: blueviolet;
+}
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+}
+hr{
+    background-color: #beb0b0;
+    margin-bottom: 27px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    height: 56px;
+    width: 56px;
+}
+/* top blogs items */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.blog{
+    display: flex;
+
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog .thumnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog-title{
+    font-size: 20px;
+}
+.author{
+    font-size: 16px;
+}
+.author a{
+    text-decoration: none;
+}
+
+/* courses style */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+.course .course-banner img{
+    width: 244px;
+    height: 104px;
+}
+.fa-star{
+    font-size: 17px;
+}
+.fa-star.field{
+color: #FFC014;
+}
+.fa-star.empty {
+color: #AEAEAE;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* 
+..........
+media-queres
+........ */
+/* ........MObile device
+......... */
+@media  only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players,.blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
+    .player{
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width:688px), (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .players .courses
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
